@@ -1,0 +1,55 @@
+/*!
+ * Bootstrap v5.0.2 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "./vender/bootstrap/functions";
+@import "./vender/bootstrap/variables";
+
+@import "./customVariables";
+
+@import "./vender/bootstrap/mixins";
+@import "./vender/bootstrap/utilities";
+
+// Layout & components
+@import "./vender/bootstrap/root";
+@import "./vender/bootstrap/reboot";
+@import "./vender/bootstrap/type";
+@import "./vender/bootstrap/images";
+@import "./vender/bootstrap/containers";
+@import "./vender/bootstrap/grid";
+@import "./vender/bootstrap/tables";
+@import "./vender/bootstrap/forms";
+@import "./vender/bootstrap/buttons";
+@import "./vender/bootstrap/transitions";
+@import "./vender/bootstrap/dropdown";
+@import "./vender/bootstrap/button-group";
+@import "./vender/bootstrap/nav";
+@import "./vender/bootstrap/navbar";
+@import "./vender/bootstrap/card";
+@import "./vender/bootstrap/accordion";
+@import "./vender/bootstrap/breadcrumb";
+@import "./vender/bootstrap/pagination";
+@import "./vender/bootstrap/badge";
+@import "./vender/bootstrap/alert";
+@import "./vender/bootstrap/progress";
+@import "./vender/bootstrap/list-group";
+@import "./vender/bootstrap/close";
+@import "./vender/bootstrap/toasts";
+@import "./vender/bootstrap/modal";
+@import "./vender/bootstrap/tooltip";
+@import "./vender/bootstrap/popover";
+@import "./vender/bootstrap/carousel";
+@import "./vender/bootstrap/spinners";
+@import "./vender/bootstrap/offcanvas";
+
+// Helpers
+@import "./vender/bootstrap/helpers";
+
+// Utilities
+@import "./vender/bootstrap/utilities/api";
+// scss-docs-end import-stack

@@ -1,0 +1,91 @@
+@mixin fontSize($font) {
+    font-size: $font / 16 + rem;
+}
+
+@mixin padding($position, $px){
+    padding-#{$position}: $px / 16 + rem;
+}
+@mixin paddingY($px){
+    padding-top: $px / 16 + rem;
+    padding-bottom: $px / 16 + rem;
+}
+@mixin paddingX($px){
+    padding-left: $px / 16 + rem;
+    padding-right: $px / 16 + rem;
+}
+@mixin paddingWhole($top, $right, $bottom, $left){
+    padding-top: $top / 16 + rem;
+    padding-right: $right / 16 + rem;
+    padding-bottom: $bottom / 16 + rem;
+    padding-left: $left / 16 + rem;
+}
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin sudoElement($sudoElement, $position, $content:null, $top: null, $right: null, $bottom: null, $left: null) {
+    &:#{$sudoElement} {
+        position: absolute;
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        left: $left;
+        content: "#{$content}";
+    }
+}
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin transformCenter{
+    transform: translate(-50%, -50%);
+}
+@mixin transformCenterX{
+    transform: translateX(-50%);
+}
+@mixin transformCenterY{
+    transform: translateY(-50%);
+}
+
+@mixin margin($position, $px){
+    margin-#{$position}: $px / 16 + rem;
+}
+@mixin marginY($px){
+    margin-top: $px / 16 + rem;
+    margin-bottom: $px / 16 + rem;
+}
+@mixin marginX($px){
+    margin-left: $px / 16 + rem;
+    margin-right: $px / 16 + rem;
+}
+@mixin marginWhole($top: null, $right: null, $bottom: null, $left: null){
+    margin-top: $top / 16 + rem;
+    margin-right: $right / 16 + rem;
+    margin-bottom: $bottom / 16 + rem;
+    margin-left: $left / 16 + rem;
+}
+@mixin border($top: null, $right: null, $bottom: null, $left: null, $style: null, $color: null){
+    border-top-width: $top;
+    border-right-width: $right;
+    border-bottom-width: $bottom;
+    border-left-width: $left;
+    border-style: $style;
+    border-color: $color;
+}
+@mixin backgroundFull($position: null, $size: null){
+    background-position: $position;
+    background-size: $size;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+}
