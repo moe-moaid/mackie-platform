@@ -3234,4 +3234,26 @@ a {
   text-decoration: underline;
 }
 
+#users-number {
+  width: 120px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 3px;
+  outline: none; }
+
+  #users-number-btn {
+    padding: 3px;
+    border: none;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+@media (max-width: 1272px) {
+  #users-number-btn {
+    width: 120px;
+    margin-left: 0;
+    margin-top: 4px; 
+  } 
+}
+
 /*# sourceMappingURL=style.css.map */

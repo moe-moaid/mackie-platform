@@ -2711,3 +2711,25 @@ a{
 .hz-upload-video-field-text{
     text-decoration: underline;
 }
+
+#users-number {
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 3px;
+    outline: none;
+}
+
+#users-number-btn {
+    padding: 3px;
+    border: none;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+@media (max-width: 1272px) {
+    #users-number-btn {
+        width: 150px;
+        margin-top: 4px;
+    }
+}
